@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+ --font-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+.navbar div{
+    padding: 0 43% 0 43% ;    
+    text-align:center;
+    color: white;
+}
+
+
+header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+select {
+    width: 280px;
+    height: 38px;
+    margin: 10px 0 10px;
+}
+
+
+label{
+    
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 100px;    
+    font-family: var(--font-padrao); 
+    
+}
+
+#fPessoas {
+    margin-left: 30%;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    width: 500px;
+    border: 2px solid ;
+    border-radius: 10px;
+    padding: 20px;
+
+    
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    margin: 5px 0 5px;
+    
+}
+
+.linguagem{
+    width: 20px;
+    height: 20px;
+    
+}
+.sexo{
+    width: 20px;
+    height: 20px;
+}
+
+span{
+    font-size: 20px;
+    font-family: var(--font-padrao); 
+}
+
+
+.tabela{
+    background-color: cornflowerblue;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    margin-bottom: 50px;
+    
+}
+
+
+.tabela thead tr th {
+    
+    padding: 5px 30px 5px 30px;
+    font-family: var(--font-padrao) ;
+    font-size: 20px;
+    
+    
+}
+/* CONFIGURACAO DA JANELA COOKIE*/
+.cookie-container {
+    width: 100%;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #2b4d7f;
+    color: #f5f6fa;
+    padding: 0 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  
+    transition: 400ms;
+  }
+.cookie-container.active{
+    bottom: 0;
+    
+}
+
+.cookie-container a {
+    color: #f5f6fa;
+}
+.cookie-container a:hover{
+    color:grey;
+    
+}
+
+.cookie-btn {
+    background: #00708c;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 30px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+.cookie-btn a:hover{
+      background: #2f3640;
+      transition: 5ms;
+  }
+
+.text{
+      width: 70%;
+  }
+
+.right{
+    width: -30%;
+    height: -10%;
+      text-align: right;
+      align-items: right;
+  }
+
+  /* CSS DA JANELA MODAL */
+  
+  .img-logo{
+    width: 140px;
+    height: 50px;
+    margin: 5px 0 0 100%;
+}
+
+.top-modal{
+    width: 100%;
+    height: 80px;
+    background-color: #2b4d7f;    
+    border-radius: 1px 1px 0 0;    
+    align-items: center;
+    
+  }
+  .modal-footer{
+    width: 100%;    
+    background-color: #2b4d7f;  
+
+  }
+
+  .btn-permitir{  
+    
+    background: #00708c;
+    border: 0;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 -1px 5px #2b4d7f;
+    
+}
+
+.btn-permitir:hover{
+    background-color: #2b4d7f;
+    transition: 450ms;
+    
+}
+
+.btn-confirm{
+    background: #00708c;
+    border: 0;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 -1px 5px #2b4d7f;
+
+}
+.btn-confirm:hover{
+    background-color: #2b4d7f;
+    transition: 450ms;
+    
+}
+
+.texto-modal{
+    font-size: 14px;
+}
+
+.aling{
+    text-align: center;
+}
+
+h5{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+  
+label span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00708c;
+    cursor: pointer;
+}
+
+label span:hover{
+    color: #2b4d7f;
+    transition: 450ms;
+    
+}
+
+.sempre-ativo{
+padding-left: 30px;
+}
+
+/*BOTAO CHECK*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    right: 15px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+ 
+  input.primary:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 30px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .accordion{
+      padding: 10px;
+  }
