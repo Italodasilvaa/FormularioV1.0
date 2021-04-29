@@ -3,7 +3,7 @@
 var selectedRow = null;
 
 function onFormSubmit() {
-
+    debugger;
     var formData = leDados();
     if (selectedRow == null)
         inseriDados(formData);
@@ -96,7 +96,7 @@ function validaDados() {
 
 $(document).ready(function () {
 
-
+    debugger;
     $('#txtData').mask("99/99/9999");
     $("#txtNome").on("input", function(){
         var regexp = /[^a-zA-Z]/g;
@@ -123,6 +123,7 @@ $(document).ready(function () {
 function leDados() {
     var formData = {};
     debugger;
+    debugger;
     formData["nome"] = $('input[name=txtNome]').val();
     formData["dataNascimento"] = $("#txtData").val();
     formData["linguagem"] = $('input[name=linguagem]:checked').map(function () { return this.value; }).get().join(', ');
@@ -135,9 +136,9 @@ function leDados() {
 }
 
 function inseriDados(data) {
-
+    debugger;
     if($("#meuForm").valid()){
-
+        debugger;
 
     var pessoas = document.getElementById("tbPessoas");
     var linha = pessoas.insertRow(pessoas.length);
@@ -161,6 +162,7 @@ function inseriDados(data) {
 }
 
 function limpaDados() {
+    debugger;
     $('#meuForm').each(function () {
         this.reset();
     });
@@ -168,7 +170,7 @@ function limpaDados() {
 }
 
 function onEdit(td) {
-
+    debugger;
     selectedRow = td.parentElement.parentElement;
     $("#txtNome").val(selectedRow.cells[0].innerHTML);
     $("#txtData").val(selectedRow.cells[1].innerHTML);
